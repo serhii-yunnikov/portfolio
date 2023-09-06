@@ -1,0 +1,18 @@
+export enum Technologies {
+  html = 'HTML',
+  css = 'CSS',
+  sass = 'SASS',
+  javascript = 'JavaScript',
+  react = 'React.js',
+  typescript = 'TypeScript',
+  redux = 'Redux',
+  reduxToolkit = 'Redux Toolkit',
+  next = 'Next.js',
+  mui = 'Material UI',
+  tanStackQuery  = 'TanStack Query',
+  git = 'Git/GitHub',
+  npm = 'npm',
+  restApi = 'RESTful API',
+  router = 'React Router',
+  context = 'React Context',
+}
