@@ -23,19 +23,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-// const useStyles = makeStyles((theme: Theme) => createStyles({
-//   root:
-//     {
-//       maxWidth: '345px',
-//     },
-//   action:
-//     {
-//       alignItems: 'center',
-//     }
-// }));
-
 export default function CardItem() {
-  // const classes = useStyles();
 
   return (
     <Card sx={{ maxWidth: '345px'}}>

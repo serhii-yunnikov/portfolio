@@ -2,8 +2,7 @@ import {
   Typography,
   Toolbar,
   Avatar,
-  AppBar,
-  Tooltip,
+  AppBar
 } from "@mui/material";
 import avatar from '../assets/images/ava.jpeg';
 import Button from "@material-ui/core/Button";
@@ -38,15 +37,15 @@ export const Header: React.FC = () => {
     <AppBar
       sx={{
         zIndex: '3',
-        opacity: 0.9,
         height: 55,
         borderRadius: '16px',
-        backgroundColor: '#fbfbfdcc',
-        backdropFilter: 'blur(25px)',
-        WebkitBackdropFilter: 'blur(25px)',
+        backgroundColor: '#ffffff7d',
+        backdropFilter: 'blur(30px)',
+        WebkitBackdropFilter: 'blur(30px)',
         border: '1px solid rgba(255, 255, 255, 0.24)',
         transition: 'background 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)',
         transitionProperty: 'background, backdrop-filter, -webkit-backdrop-filter',
+        boxShadow: '0 10px 15px rgb(0 0 0 / 20%)'
       }}
     >
       <Toolbar
@@ -76,22 +75,17 @@ export const Header: React.FC = () => {
             );
           })}
         </Typography>
-          {/* <div className="avatar"> */}
-            <Tooltip title="Serhii" arrow>
-              <Avatar
-                alt="Serhii"
-                src={avatar}
-                sx={{
-                  width: 40,
-                  '&:hover': {
-                    transform: 'translate(-60px, 40px) scale(3)',
-                    transition: 'transform 2s ease-out',
-                  }
-                }}
-              />
-            </Tooltip>
-          {/* </div> */}
-    
+          <Avatar
+            alt="Serhii"
+            src={avatar}
+            sx={{
+              width: 40,
+              transition: 'transform 1s ease',
+              '&:hover': {
+                transform: 'translate(-20px, 30px) scale(3)'
+              }
+            }}
+          />
       </Toolbar>
     </AppBar>
   );
