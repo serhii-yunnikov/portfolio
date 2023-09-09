@@ -1,4 +1,5 @@
-import { Card, CardContent, CardHeader } from "@material-ui/core";
+import { CardContent, CardHeader } from "@material-ui/core";
+import Card from '@mui/material/Card';
 import { expertise } from "../api/api";
 import { ExpertiseIcon } from "./ExpertiseIcon";
 
@@ -8,7 +9,7 @@ type Props = {
 
 export const ExpertiseCard: React.FC<Props> = ({ title }) => {
   return (
-    <Card>
+    <Card sx={{ width: '700px', backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)' }}>
       <CardHeader title={title}/>
       <CardContent>
        {expertise.map(item => (
@@ -18,3 +19,5 @@ export const ExpertiseCard: React.FC<Props> = ({ title }) => {
     </Card>
   );
 };
+
+// backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)'

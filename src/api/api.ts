@@ -18,7 +18,7 @@ export const expertise: Expertise[] = [
     title: 'JavaScript',
   },
   {
-    src: 'material-ua',
+    src: 'material-ui',
     title: 'Material UA',
   },
   {
@@ -36,5 +36,36 @@ export const expertise: Expertise[] = [
   {
     src: 'react-router',
     title: 'React Router',
+  },
+  {
+    src: 'redux',
+    title: 'Redux',
+  },
+  {
+    src: 'sass',
+    title: 'SASS',
+  },
+  {
+    src: 'typescript',
+    title: 'Typescript',
+  },
+];
+
+export const tools: Expertise[] = [
+  {
+    src: 'figma',
+    title: 'Figma',
+  },
+  {
+    src: 'git',
+    title: 'Git',
+  },
+  {
+    src: 'npm',
+    title: 'npm',
+  },
+  {
+    src: 'visual-studio-code',
+    title: 'VS Code',
   },
 ];
