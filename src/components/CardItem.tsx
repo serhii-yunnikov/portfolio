@@ -11,7 +11,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from '@mui/material/Link';
 import PlayLessonIcon from '@mui/icons-material/PlayLesson';
 import Tooltip from '@mui/material/Tooltip';
-import image from '../images/Screenshot.jpeg'
+import image from '../assets/images/Screenshot.jpeg';
 import { Stack } from '@mui/material';
 import Paper from '@material-ui/core/Paper/Paper';
 

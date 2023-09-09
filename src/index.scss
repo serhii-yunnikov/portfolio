@@ -1,42 +1,28 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+@import './styles/about.scss';
+
+html, body {
+  scroll-behavior: smooth;
 }
 
-.cardContainer {
-  background-color: blue;
-  /*margin: 20px;*/
-  display: flex;
-  flex-direction: column;
-  flex-grow: 2;
-  align-items: center;
-  box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.4);
-}
-.titleContainer {
-  background-color: white;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  margin-top: 5px;
-}
-#title {
-  flex-grow: 3;
+#root {
   position: relative;
+  background-color: #fbfbfd;
 }
 
-#rating {
-  width: 40%;
-  background-color: orange;
-  flex-direction: row;
-}
-.cardImgContainer {
-  background-color: green;
+.section {
+  height: 100vh;
+  margin: 80px 20px 0 20px;
+  transition: all 1;
+
+  &__about {
+    color: #1d1d1f;;
+  }
 }
 
-.cardImgContainer img {
-  object-fit: fill;
-}
-
-.cardTextContainer {
-  background-color: red;
-}
+// .MuiToolbar-root {
+//   background-image: linear-gradient(to right, #553c9a, #b393d3);
+//   background-color: #fff;
+//   color: transparent;
+//   height: 40px;
+//   opacity: 0.9;
+// }
