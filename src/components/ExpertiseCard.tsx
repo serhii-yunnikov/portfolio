@@ -12,7 +12,7 @@ export const ExpertiseCard: React.FC<Props> = ({ title }) => {
       <CardHeader title={title}/>
       <CardContent>
        {expertise.map(item => (
-        <ExpertiseIcon src={item.src} title={item.title}/>
+        <ExpertiseIcon key={item.title} src={item.src} title={item.title}/>
        ))}
       </CardContent>
     </Card>
