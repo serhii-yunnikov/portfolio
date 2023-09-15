@@ -1,6 +1,6 @@
 import { Expertise } from "../types/Expertise";
 
-export const expertise: Expertise[] = [
+export const leftExpertise: Expertise[] = [
   {
     src: 'api',
     title: 'RESTful API',
@@ -18,24 +18,8 @@ export const expertise: Expertise[] = [
     title: 'JavaScript',
   },
   {
-    src: 'material-ui',
-    title: 'Material UA',
-  },
-  {
-    src: 'nextjs',
-    title: 'Next.js',
-  },
-  {
     src: 'react',
     title: 'React.js',
-  },
-  {
-    src: 'react-query',
-    title: 'TanStack Query',
-  },
-  {
-    src: 'react-router',
-    title: 'React Router',
   },
   {
     src: 'redux',
@@ -51,7 +35,23 @@ export const expertise: Expertise[] = [
   },
 ];
 
-export const tools: Expertise[] = [
+export const rightExpertise: Expertise[] = [
+  {
+    src: 'nextjs',
+    title: 'Next.js',
+  },
+  {
+    src: 'material-ui',
+    title: 'Material UA',
+  },
+  {
+    src: 'react-router',
+    title: 'React Router',
+  },
+  {
+    src: 'react-query',
+    title: 'TanStack Query',
+  },
   {
     src: 'figma',
     title: 'Figma',

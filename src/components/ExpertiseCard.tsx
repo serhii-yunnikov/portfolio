@@ -1,23 +1,28 @@
-import { CardContent, CardHeader } from "@material-ui/core";
-import Card from '@mui/material/Card';
-import { expertise } from "../api/api";
 import { ExpertiseIcon } from "./ExpertiseIcon";
+import { Box, Grid } from "@mui/material";
+import { Expertise } from "../types/Expertise";
 
 type Props = {
-  title: string,
+  technologies: Expertise[]
 };
 
-export const ExpertiseCard: React.FC<Props> = ({ title }) => {
+export const ExpertiseCard: React.FC<Props> = ({ technologies }) => {
   return (
-    <Card sx={{ width: '700px', backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)' }}>
-      <CardHeader title={title}/>
-      <CardContent>
-       {expertise.map(item => (
-        <ExpertiseIcon key={item.title} src={item.src} title={item.title}/>
-       ))}
-      </CardContent>
-    </Card>
+    <Box sx={{
+      display: 'flex',
+      backgroundColor: 'rgb(2,0,36)',
+    }}>
+        <Grid container spacing={2}>
+          {technologies.map(item => (
+            <Grid item md={6} sm={6} lg={6} display="flex" justifyContent="center" alignItems="center">
+              <ExpertiseIcon
+                key={item.title}
+                src={item.src}
+                title={item.title}
+              />
+            </Grid>
+          ))}
+        </Grid>
+    </Box>
   );
 };
-
-// backgroundImage: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)'

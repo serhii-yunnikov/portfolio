@@ -4,6 +4,7 @@ import App from './App.tsx';
 import './index.scss';
 import '@material-ui/styles' ;
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />

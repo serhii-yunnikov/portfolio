@@ -1,3 +1,4 @@
+@import './styles/fonts.scss';
 @import './styles/about.scss';
 
 html, body {
@@ -7,6 +8,8 @@ html, body {
 #root {
   position: relative;
   background-color: #fbfbfd;
+  font-family: 'SF Pro';
+  color: '#1d1d1f';
 }
 
 .section {

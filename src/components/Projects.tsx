@@ -40,7 +40,7 @@ export const Projects: React.FC = () => {
       <Carroussel
         cards={cards}
         height="500px"
-        width="90%"
+        width="800px"
         margin="0 auto"
         offset={2}
         showArrows={false}

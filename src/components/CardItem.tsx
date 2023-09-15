@@ -6,42 +6,43 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
-import { red } from '@mui/material/colors';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from '@mui/material/Link';
 import PlayLessonIcon from '@mui/icons-material/PlayLesson';
 import Tooltip from '@mui/material/Tooltip';
 import image from '../assets/images/Screenshot.jpeg';
 import { Stack } from '@mui/material';
-import Paper from '@material-ui/core/Paper/Paper';
+import AppsIcon from '@mui/icons-material/Apps';
+import { ExpertiseIconSmall } from './ExpertiseIconSmall';
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
+const Item = styled(Card)(({ theme }) => ({
+  color: 'rgba(0, 0, 0, 0.54)',
+  boxShadow: '12px 12px 33px -3px rgba(0,0,0,0.56)',
+  maxWidth: '345px',
+  '& .MuiCardHeader-action': {
+    margin: '0',
+    alignSelf: 'center'
+  },
+  '& .MuiCardHeader-title': {
+    fontWeight: 'bold',
+    fontSize: '16px'
+  }
 }));
 
 export default function CardItem() {
 
   return (
-    <Card sx={{ maxWidth: '345px'}}>
+    <Item>
       <CardHeader
-        sx={{
-          '& .MuiCardHeader-action': {
-            margin: '0',
-            alignSelf: 'center'
-          }
-        }}
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+          <Avatar sx={{ bgcolor: 'rgba(0, 0, 0, 0.54)' }} aria-label="project">
+            <AppsIcon />
           </Avatar>
         }
         action={
           <CardActions sx={{ padding: '0' }}>
             <Link
+              className="card-link"
               href="https://github.com/serhii-yunnikov?tab=repositories"
               color="rgba(0, 0, 0, 0.54)"
             >
@@ -50,10 +51,11 @@ export default function CardItem() {
                 placement="top"
                 arrow
               >
-                <GitHubIcon />
+                <GitHubIcon fontSize="large" />
               </Tooltip>
             </Link>
             <Link
+              className="card-link"
               href="https://github.com/serhii-yunnikov?tab=repositories"
               color="rgba(0, 0, 0, 0.54)"
             >
@@ -62,13 +64,13 @@ export default function CardItem() {
                 placement="top"
                 arrow
               >
-                <PlayLessonIcon/>
+                <PlayLessonIcon fontSize="large" />
               </Tooltip>
             </Link>
           </CardActions>
         }
-        title="Project name"
-        subheader="September 14, 2016"
+        title="Phone catalog"
+        // subheader="September 14, 2016"
       />
       <CardMedia
         component="img"
@@ -84,14 +86,12 @@ export default function CardItem() {
           useFlexGap
           flexWrap="wrap"
         >
-          <Item>Item 1</Item>
-          <Item>Item 2</Item>
-          <Item>Item 3</Item>
-          <Item>Item 4</Item>
-          <Item>Item 5</Item>
-          <Item>Item 6</Item>
+          <ExpertiseIconSmall src='react' title='React' />
+          <ExpertiseIconSmall src='css' title='CSS' />
+          <ExpertiseIconSmall src='sass' title='SASS' />
+          <ExpertiseIconSmall src='redux' title='Redux' />
         </Stack>
       </CardContent>
-    </Card>
+    </Item>
   );
 }
