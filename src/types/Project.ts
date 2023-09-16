@@ -1,11 +1,10 @@
-import { Technologies } from "./Technologies";
+import { Expertise } from "./Expertise";
 
 export interface Project {
   title: string,
-  subtitle: string,
   description: string,
   picture: string,
   gitHub: string,
   demo: string,
-  technologies: Technologies[],
+  technologies: Expertise[],
 }

@@ -10,7 +10,6 @@ const ModButton = styled(Button)({
   textAlign: 'left',
   display: 'inline-flex',
   height: '24px',
-  fontSize: '13px',
   justifyContent: 'center',
   gap: '5px',
   lineHeight: '19px',

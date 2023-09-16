@@ -14,7 +14,8 @@ html, body {
 
 .section {
   height: 100vh;
-  margin: 80px 20px 0 20px;
+  margin: 0 20px 0 20px;
+  padding-top: 80px;
   transition: all 1;
 
   &__about {
@@ -22,10 +23,14 @@ html, body {
   }
 }
 
-// .MuiToolbar-root {
-//   background-image: linear-gradient(to right, #553c9a, #b393d3);
-//   background-color: #fff;
-//   color: transparent;
-//   height: 40px;
-//   opacity: 0.9;
-// }
+.card {
+  width: 350px;
+  height: fit-content;
+  -webkit-backdrop-filter: blur(30px);
+  background-color: #E6E6E6;
+  border-radius: 10px;
+}
+
+.card-link:hover {
+  transition: scale 0.4s ease-out;
+}

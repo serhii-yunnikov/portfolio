@@ -1,6 +1,7 @@
 import { ExpertiseIcon } from "./ExpertiseIcon";
 import { Box, Grid } from "@mui/material";
 import { Expertise } from "../types/Expertise";
+import { AnimatedBlock } from "./AnimatedBlock";
 
 type Props = {
   technologies: Expertise[]
@@ -10,19 +11,28 @@ export const ExpertiseCard: React.FC<Props> = ({ technologies }) => {
   return (
     <Box sx={{
       display: 'flex',
-      backgroundColor: 'rgb(2,0,36)',
     }}>
-        <Grid container spacing={2}>
-          {technologies.map(item => (
-            <Grid item md={6} sm={6} lg={6} display="flex" justifyContent="center" alignItems="center">
+      <Grid container spacing={3} sx={{ padding: '30px' }}>
+        {technologies.map(item => (
+          <Grid
+          key={item.title}
+          item
+          md={2}
+          sm={2}
+          lg={2}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          >
+            <AnimatedBlock>
               <ExpertiseIcon
-                key={item.title}
                 src={item.src}
                 title={item.title}
               />
-            </Grid>
-          ))}
-        </Grid>
+            </AnimatedBlock>
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   );
 };

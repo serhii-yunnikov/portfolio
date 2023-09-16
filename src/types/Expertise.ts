@@ -1,4 +1,6 @@
+import { Technologies } from "./Technologies";
+
 export interface Expertise {
   src: string,
-  title: string
+  title: Technologies
 }

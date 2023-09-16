@@ -16,4 +16,6 @@ export enum Technologies {
   restApi = 'RESTful API',
   router = 'React Router',
   context = 'React Context',
+  figma = 'Figma',
+  vsCode = 'VS Code'
 }

@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { styled } from '@mui/material/styles';
-import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
-import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
@@ -10,30 +8,63 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from '@mui/material/Link';
 import PlayLessonIcon from '@mui/icons-material/PlayLesson';
 import Tooltip from '@mui/material/Tooltip';
-import image from '../assets/images/Screenshot.jpeg';
-import { Stack } from '@mui/material';
+import { Box, Container, Stack } from '@mui/material';
 import AppsIcon from '@mui/icons-material/Apps';
 import { ExpertiseIconSmall } from './ExpertiseIconSmall';
+import { Project } from '../types/Project';
+import { Expertise } from '../types/Expertise';
+import { useSpring, animated } from "react-spring";
+import { useState } from 'react';
 
-const Item = styled(Card)(({ theme }) => ({
-  color: 'rgba(0, 0, 0, 0.54)',
-  boxShadow: '12px 12px 33px -3px rgba(0,0,0,0.56)',
-  maxWidth: '345px',
-  '& .MuiCardHeader-action': {
-    margin: '0',
-    alignSelf: 'center'
-  },
-  '& .MuiCardHeader-title': {
-    fontWeight: 'bold',
-    fontSize: '16px'
+const ImageContainer = styled(Container)(() => ({
+  width: '100%',
+  height: '200px',
+  '& .card-image': {
+    objectFit: 'contain',
+    width: '100%',
+    height: '100%'
   }
 }));
 
-export default function CardItem() {
+const Header = styled(CardHeader)(() => ({
+  '& .CardHeader-action': {
+    transition: 'scale 0.4s ease-out',
+  },
+  '.card-link:hover': {
+    scale: '1.3'
+  }
+}));
+
+type Props = Project;
+
+const CardItem: React.FC<Props> = ({
+  title,
+  description,
+  picture,
+  gitHub,
+  demo,
+  technologies,
+}) => {
+  const [show, setShown] = useState(false);
+
+  const props3 = useSpring({
+    transform: show ? "scale(1.03)" : "scale(1)",
+    boxShadow: show
+      ? "24px 28px 31px rgb(0 0 0 / 20%)"
+      : "16px 16px 31px rgb(0 0 0 / 20%)"
+  });
 
   return (
-    <Item>
-      <CardHeader
+    <Box
+      component={animated.div}
+      key={title}
+      style={props3}
+      className='card'
+      onMouseEnter={() => setShown(true)}
+      onMouseLeave={() => setShown(false)}
+      sx={{ width: { xs: '250px', sm: '300px', lg: '350px' } }}
+    >
+      <Header
         avatar={
           <Avatar sx={{ bgcolor: 'rgba(0, 0, 0, 0.54)' }} aria-label="project">
             <AppsIcon />
@@ -43,7 +74,7 @@ export default function CardItem() {
           <CardActions sx={{ padding: '0' }}>
             <Link
               className="card-link"
-              href="https://github.com/serhii-yunnikov?tab=repositories"
+              href={gitHub}
               color="rgba(0, 0, 0, 0.54)"
             >
               <Tooltip
@@ -56,7 +87,7 @@ export default function CardItem() {
             </Link>
             <Link
               className="card-link"
-              href="https://github.com/serhii-yunnikov?tab=repositories"
+              href={demo}
               color="rgba(0, 0, 0, 0.54)"
             >
               <Tooltip
@@ -69,15 +100,12 @@ export default function CardItem() {
             </Link>
           </CardActions>
         }
-        title="Phone catalog"
-        // subheader="September 14, 2016"
+        title={title}
+        subheader={description}
       />
-      <CardMedia
-        component="img"
-        height="150"
-        image={image}
-        alt="Phone catalogue"
-      />
+      <ImageContainer>
+        <img src={picture} alt={title} className='card-image'/>
+      </ImageContainer>
       <CardContent>
         <Stack
           direction="row"
@@ -86,12 +114,17 @@ export default function CardItem() {
           useFlexGap
           flexWrap="wrap"
         >
-          <ExpertiseIconSmall src='react' title='React' />
-          <ExpertiseIconSmall src='css' title='CSS' />
-          <ExpertiseIconSmall src='sass' title='SASS' />
-          <ExpertiseIconSmall src='redux' title='Redux' />
+          {technologies.map((item: Expertise )=> (
+            <ExpertiseIconSmall
+              key={item.src}
+              src={item.src}
+              title={item.title}
+              />
+          ))}
         </Stack>
       </CardContent>
-    </Item>
+    </Box>
   );
 }
+
+export default CardItem;
