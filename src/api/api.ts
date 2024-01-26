@@ -4,6 +4,10 @@ import { Technologies } from "../types/Technologies";
 
 export const expertiseItems: Expertise[] = [
   {
+    src: 'javascript',
+    title: Technologies.javascript,
+  },
+  {
     src: 'api',
     title: Technologies.restApi,
   },
@@ -12,12 +16,12 @@ export const expertiseItems: Expertise[] = [
     title: Technologies.css,
   },
   {
-    src: 'html',
-    title: Technologies.html,
+    src: 'sass',
+    title: Technologies.sass,
   },
   {
-    src: 'javascript',
-    title: Technologies.javascript,
+    src: 'html',
+    title: Technologies.html,
   },
   {
     src: 'react',
@@ -28,10 +32,6 @@ export const expertiseItems: Expertise[] = [
     title: Technologies.redux,
   },
   {
-    src: 'sass',
-    title: Technologies.sass,
-  },
-  {
     src: 'typescript',
     title: Technologies.typescript,
   },
@@ -40,16 +40,24 @@ export const expertiseItems: Expertise[] = [
     title: Technologies.next,
   },
   {
-    src: 'material-ui',
-    title: Technologies.mui,
-  },
-  {
     src: 'react-router',
     title: Technologies.router,
   },
   {
     src: 'react-query',
     title: Technologies.tanStackQuery,
+  },
+  {
+    src: 'bulma',
+    title: Technologies.bulma,
+  },
+  {
+    src: 'bootstrap',
+    title: Technologies.bootstrap,
+  },
+  {
+    src: 'material-ui',
+    title: Technologies.mui,
   },
   {
     src: 'figma',
@@ -99,6 +107,10 @@ export const projects: Project[] = [
         title: Technologies.router,
       },
       {
+        src: 'api',
+        title: Technologies.restApi,
+      },
+      {
         src: 'typescript',
         title: Technologies.typescript,
       },
@@ -130,6 +142,10 @@ export const projects: Project[] = [
       {
         src: 'react-query',
         title: Technologies.tanStackQuery,
+      },
+      {
+        src: 'api',
+        title: Technologies.restApi,
       },
       {
         src: 'typescript',
@@ -171,6 +187,35 @@ export const projects: Project[] = [
       {
         src: 'javascript',
         title: Technologies.javascript,
+      }
+    ]
+  },
+  {
+    title: 'List of posts',
+    description: 'React.js application',
+    picture: 'src/assets/images/list_of_posts.jpeg',
+    gitHub: 'https://github.com/serhii-yunnikov/react_redux-list-of-posts/tree/develop',
+    demo: 'https://serhii-yunnikov.github.io/react_redux-list-of-posts/',
+    technologies: [
+      {
+        src: 'react',
+        title: Technologies.react,
+      },
+      {
+        src: 'redux',
+        title: Technologies.reduxToolkit,
+      },
+      {
+        src: 'api',
+        title: Technologies.restApi,
+      },
+      {
+        src: 'typescript',
+        title: Technologies.typescript,
+      },
+      {
+        src: 'bulma',
+        title: Technologies.bulma,
       }
     ]
   },

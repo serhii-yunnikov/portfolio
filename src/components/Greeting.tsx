@@ -1,6 +1,5 @@
-import { Typography } from "@material-ui/core";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -43,7 +42,8 @@ export const Greeting: React.FC = motion(() => {
       className={classes.root}
     >
       <Typography
-        variant="h1"
+        // variant="h1"
+        sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}
         className="greeting"
         component={motion.div}
         initial={{ x: '-100%' }}

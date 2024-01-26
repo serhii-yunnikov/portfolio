@@ -1,30 +1,23 @@
-
-import { createTheme } from '@mui/material';
-import { About } from './components/About';
+import { About } from './components/About/About';
 import { Contacts } from './components/Contacts';
 import { Expertise } from './components/Expertise';
 import { Greeting } from './components/Greeting';
 import { Header } from './components/Header';
 import { Projects } from './components/Projects';
-import { MuiThemeProvider } from '@material-ui/core';
+import { ThemeProvider } from '@mui/material/styles';
+import { lightTheme } from './common/themes/portfolioTheme';
+
 
 function App() {
-  const theme = createTheme({
-    typography: {
-      fontFamily:
-        'SF Pro',
-      },
-  });
-
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={lightTheme}>
       <Header />
       <Greeting />
       <About />
       <Expertise />
       <Projects />
       <Contacts />
-    </MuiThemeProvider>
+    </ThemeProvider>
   )
 }
 

@@ -21,7 +21,7 @@ export const AnimatedBlock: React.FC<Props> = ({ children, width = 'fit-content'
         }}
         initial='hidden'
         whileInView='visible'
-        transition={{ delay: 0.25, duration: 0.5 }}
+        transition={{ delay: 0.15, duration: 0.5 }}
       >
         {children}
       </motion.div>

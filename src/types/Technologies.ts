@@ -17,5 +17,7 @@ export enum Technologies {
   router = 'React Router',
   context = 'React Context',
   figma = 'Figma',
-  vsCode = 'VS Code'
+  vsCode = 'VS Code',
+  bulma = 'Bulma',
+  bootstrap = 'Bootstrap'
 }

@@ -3,7 +3,7 @@ import { CardType } from '../types/CardType';
 import CardItem from "./CardItem";
 import { projects } from "../api/api";
 import { Carroussel } from "./Carroussel";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 
 const cards: CardType[] = projects.map(item => ({
@@ -14,6 +14,9 @@ const cards: CardType[] = projects.map(item => ({
 export const Projects: React.FC = () => {
   return (
     <section className="section" id="projects">
+      <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>
+        Projects.
+      </Typography>
       <Grid container sx={{ width: '70%', margin: 'auto' }}>
         <Carroussel
           cards={cards}
