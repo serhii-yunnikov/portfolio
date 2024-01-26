@@ -9,19 +9,19 @@ html, body {
   position: relative;
   background-color: #fbfbfd;
   font-family: 'SF Pro';
-  color: '#1d1d1f';
+  // color: '#1d1d1f';
 }
 
-.section {
-  height: 100vh;
-  margin: 0 20px 0 20px;
-  padding-top: 80px;
-  transition: all 1;
+// .section {
+//   height: 100vh;
+//   margin: 0 20px 0 20px;
+//   padding-top: 80px;
+//   transition: all 1;
 
-  &__about {
-    color: #1d1d1f;
-  }
-}
+//   &__about {
+//     color: #1d1d1f;
+//   }
+// }
 
 .card {
   width: 350px;

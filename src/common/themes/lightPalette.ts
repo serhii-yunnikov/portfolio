@@ -13,8 +13,8 @@ const lightPalette = createTheme({
   palette: {
     primary: {
       light: '#FFE48D',
-      main: '#FFD700',
-      dark: '#FFCD2B',
+      main: '#1d1d1f',
+      dark: '#1d1d1f',
     },
     secondary: {
       main: '#0057B8',

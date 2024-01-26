@@ -12,3 +12,12 @@ balancing my studies with my passion for sports. As a coach, \
 I've honed strong communication skills, regularly engaging with \
 English-speaking clients from around the world, \
 and organizing events and training courses.";
+
+export const lottieStyle = {
+  width: '100%',
+  height: '100%'
+};
+
+export const aboutTextStyle = {
+  color: '#86868b'
+};
