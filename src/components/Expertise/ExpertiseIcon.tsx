@@ -1,5 +1,5 @@
 import { Button, Tooltip, styled } from "@material-ui/core";
-import { Expertise } from "../types/Expertise";
+import { Expertise } from "../../types/Expertise";
 
 const ModButton = styled(Button)({
   width: '90px',
