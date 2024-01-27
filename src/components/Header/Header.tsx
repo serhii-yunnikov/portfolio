@@ -4,7 +4,7 @@ import {
   Avatar,
   AppBar
 } from "@mui/material";
-import avatar from '../assets/images/ava.jpeg';
+import avatar from '../../assets/images/ava.jpeg';
 import Button from "@material-ui/core/Button";
 
 type NavLink = {

@@ -1,7 +1,7 @@
 import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config } from "react-spring";
-import { CardType } from "../types/CardType";
+import { CardType } from "../../types/CardType";
 
 type Props = {
   offset: number,

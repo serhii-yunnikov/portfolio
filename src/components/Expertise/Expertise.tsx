@@ -1,16 +1,18 @@
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { expertiseItems } from "../../api/api";
 import { ExpertiseCard } from "./ExpertiseCard";
+import { BlockContainer } from "../About/Styles";
+import { ExpertiseContainer } from "./Styles";
 
 export const Expertise: React.FC = () => {
   return (
-    <section className="section" id="expertise">
+    <BlockContainer id="expertise">
       <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>
         Expertise.
       </Typography>
-      <Box sx={{ display: 'flex', justifyContent: 'space-between'}}>
+      <ExpertiseContainer>
         <ExpertiseCard technologies={expertiseItems} />
-      </Box>
-    </section>
+      </ExpertiseContainer>
+    </BlockContainer>
   );
 };

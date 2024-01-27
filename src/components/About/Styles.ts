@@ -1,6 +1,6 @@
 import { Box, styled } from '@mui/material';
 
-const AboutContainer = styled(Box)(({theme}) => ({
+const BlockContainer = styled(Box)(({theme}) => ({
   height: '100vh',
   margin: '0 20px 0 20px',
   paddingTop: theme.spacing(10),
@@ -14,6 +14,6 @@ const PictureContainer = styled(Box)({
 });
 
 export {
-  AboutContainer,
+  BlockContainer,
   PictureContainer,
 };

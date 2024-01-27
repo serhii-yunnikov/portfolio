@@ -1,5 +1,5 @@
 import { styled } from "@material-ui/core";
-import { Expertise } from "../types/Expertise";
+import { Expertise } from "../../types/Expertise";
 import Button from "@mui/material/Button";
 
 const ModButton = styled(Button)({

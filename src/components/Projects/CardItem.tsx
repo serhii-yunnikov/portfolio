@@ -11,8 +11,8 @@ import Tooltip from '@mui/material/Tooltip';
 import { Box, Container, Stack } from '@mui/material';
 import AppsIcon from '@mui/icons-material/Apps';
 import { ExpertiseIconSmall } from './ExpertiseIconSmall';
-import { Project } from '../types/Project';
-import { Expertise } from '../types/Expertise';
+import { Project } from '../../types/Project';
+import { Expertise } from '../../types/Expertise';
 import { useSpring, animated } from "react-spring";
 import { useState } from 'react';
 

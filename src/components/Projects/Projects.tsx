@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
-import { CardType } from '../types/CardType';
+import { CardType } from '../../types/CardType';
 import CardItem from "./CardItem";
-import { projects } from "../api/api";
+import { projects } from "../../api/api";
 import { Carroussel } from "./Carroussel";
 import { Grid, Typography } from "@mui/material";
 
