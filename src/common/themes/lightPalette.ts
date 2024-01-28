@@ -45,7 +45,7 @@ const lightPalette = createTheme({
     background: {
       default: '#FBFAFA',
       black: '#2C2C2D',
-      grey: '#E0E0E0',
+      grey: '#E6E6E6',
       border: '#EFF5FE',
       white: '#FFFFFF',
     },
