@@ -1,4 +1,5 @@
-import { Tooltip } from "@material-ui/core";
+
+import { Tooltip } from "@mui/material";
 import { Expertise } from "../../types/Expertise";
 import { ModButton } from "./Styles";
 
@@ -18,6 +19,6 @@ export const ExpertiseIcon: React.FC<Expertise> = ({ src, title }) => {
       >
         {title}
       </ModButton>
-    </Tooltip>
+     </Tooltip>
   );
 };

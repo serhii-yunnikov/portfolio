@@ -1,6 +1,6 @@
-import { Button } from '@material-ui/core';
 import {
   Box,
+  Button,
   Grid,
   styled,
 } from '@mui/material';
@@ -18,6 +18,7 @@ const CardBlock = styled(Grid)({
 });
 
 const ModButton = styled(Button)(({theme}) => ({
+    flexDirection: 'column',
     width: '90px',
     height: '90px',
     transition: '0.3s ease-out',

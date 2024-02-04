@@ -6,30 +6,31 @@ import {
 } from "@mui/material";
 import avatar from '../../assets/images/ava.jpeg';
 import Button from "@material-ui/core/Button";
+import { navLinks } from "./constants";
 
-type NavLink = {
-  label: string;
-  href: string;
-};
+// type NavLink = {
+//   label: string;
+//   href: string;
+// };
 
-const navLinks: NavLink[] = [
-  {
-    label: 'About',
-    href: '#about',
-  },
-  {
-    label: 'Expertise',
-    href: '#expertise',
-  },
-  {
-    label: 'Projects',
-    href: '#projects',
-  },
-  {
-    label: 'Contacts',
-    href: '#contacts',
-  }
-];
+// const navLinks: NavLink[] = [
+//   {
+//     label: 'About',
+//     href: '#about',
+//   },
+//   {
+//     label: 'Expertise',
+//     href: '#expertise',
+//   },
+//   {
+//     label: 'Projects',
+//     href: '#projects',
+//   },
+//   {
+//     label: 'Contacts',
+//     href: '#contacts',
+//   }
+// ];
 
 export const Header: React.FC = () => {
 
