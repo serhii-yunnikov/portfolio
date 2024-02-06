@@ -4,7 +4,7 @@ import { ExpertiseCard } from "./ExpertiseCard";
 import { BlockContainer } from "../About/Styles";
 import { ExpertiseContainer } from "./Styles";
 
-export const Expertise: React.FC = () => {
+const Expertise: React.FC = () => {
   return (
     <BlockContainer id="expertise">
       <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>
@@ -16,3 +16,5 @@ export const Expertise: React.FC = () => {
     </BlockContainer>
   );
 };
+
+export default Expertise;

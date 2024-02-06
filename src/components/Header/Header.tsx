@@ -1,13 +1,12 @@
 import {
   Typography,
-  // Toolbar,
   Button,
 } from '@mui/material';
 import avatar from '../../assets/images/ava.jpeg';
 import { navLinks } from './constants';
 import { HeaderBar, Menu, MyAvatar } from './Styles';
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
 
   return (
     <HeaderBar>
@@ -36,3 +35,5 @@ export const Header: React.FC = () => {
     </HeaderBar>
   );
 };
+
+export default Header;

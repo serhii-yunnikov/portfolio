@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 import { aboutTextStyle, lottieStyle, text } from './constants';
 import { BlockContainer, PictureContainer } from './Styles';
 
-export const About: React.FC = () => {
+const About: React.FC = () => {
   return (
     <BlockContainer id="about">
       <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>About.</Typography>
@@ -18,3 +18,5 @@ export const About: React.FC = () => {
     </BlockContainer>
   );
 };
+
+export default About;

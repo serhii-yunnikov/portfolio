@@ -33,7 +33,7 @@ const useStyles = makeStyles({
 //   }
 // };
 
-export const Greeting: React.FC = motion(() => {
+const Greeting: React.FC = motion(() => {
   const scrollRef = useRef(null);
   const classes = useStyles();
 
@@ -74,3 +74,5 @@ export const Greeting: React.FC = motion(() => {
       </Typography>
     </Box>
 )});
+
+export default Greeting;

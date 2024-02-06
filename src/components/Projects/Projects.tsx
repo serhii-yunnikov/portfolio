@@ -11,7 +11,7 @@ const cards: CardType[] = projects.map(item => ({
   content: <CardItem {...item} />
 }));
 
-export const Projects: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <section className="section" id="projects">
       <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>
@@ -30,3 +30,5 @@ export const Projects: React.FC = () => {
     </section>
   );
 };
+
+export default Projects;
