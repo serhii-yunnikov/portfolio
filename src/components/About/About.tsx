@@ -8,7 +8,7 @@ import { BlockContainer, PictureContainer } from './Styles';
 export const About: React.FC = () => {
   return (
     <BlockContainer id="about">
-      <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>About</Typography>
+      <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>About.</Typography>
       <PictureContainer>
         <LottiePlayer animationData={animation} style={lottieStyle} />
       </PictureContainer>

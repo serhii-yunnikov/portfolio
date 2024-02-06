@@ -2,14 +2,17 @@ import {createTheme} from '@mui/material/styles';
 import type {Theme} from '@mui/material/styles';
 import lightPalette from './lightPalette';
 
-export const toolbarHeights = {
-  mobilePortrait: 60,
-  mobileLandscape: 60,
-  tabletDesktop: 79,
-};
+// export const toolbarHeights = {
+//   mobilePortrait: 60,
+//   mobileLandscape: 60,
+//   tabletDesktop: 79,
+// };
 
 const createCommonTheme = (theme: Theme) => createTheme({
   ...theme,
+  typography: {
+    fontFamily: 'SF Pro'
+  },
   breakpoints: {
     values: {
       xs: 0,
@@ -20,20 +23,20 @@ const createCommonTheme = (theme: Theme) => createTheme({
     },
   },
 // spacing: 8,
-  mixins: {
-    toolbar: {
-      minHeight: toolbarHeights.mobilePortrait,
-      [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
-          minHeight: toolbarHeights.mobileLandscape,
-      },
-      [theme.breakpoints.up('sm')]: {
-          minHeight: toolbarHeights.mobileLandscape,
-      },
-      [theme.breakpoints.up('md')]: {
-          minHeight: toolbarHeights.tabletDesktop,
-      },
-    },
-  },
+  // mixins: {
+  //   toolbar: {
+  //     minHeight: toolbarHeights.mobilePortrait,
+  //     [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
+  //         minHeight: toolbarHeights.mobileLandscape,
+  //     },
+  //     [theme.breakpoints.up('sm')]: {
+  //         minHeight: toolbarHeights.mobileLandscape,
+  //     },
+  //     [theme.breakpoints.up('md')]: {
+  //         minHeight: toolbarHeights.tabletDesktop,
+  //     },
+  //   },
+  // },
   components: {
     MuiTypography: {
       styleOverrides: {
@@ -98,6 +101,14 @@ const createCommonTheme = (theme: Theme) => createTheme({
         },
       },
     },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.dark,
+          opacity: 0.8
+        }
+      }
+    }
   }
 });
 

@@ -12,7 +12,7 @@ declare module '@mui/material/styles/createPalette' {
 const lightPalette = createTheme({
   palette: {
     primary: {
-      light: '#FFE48D',
+      light: '#E6E6E6',
       main: '#1d1d1f',
       dark: '#1d1d1f',
     },
