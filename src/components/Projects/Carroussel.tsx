@@ -2,6 +2,7 @@ import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config } from "react-spring";
 import { CardType } from "../../types/CardType";
+import { Box } from "@mui/material";
 
 type Props = {
   offset: number,
@@ -28,7 +29,7 @@ export const Carroussel: React.FC<Props> = (props) => {
   }, [props.offset, props.showArrows]);
 
   return (
-    <div
+    <Box
       style={{ width: props.width, height: props.height, margin: props.margin }}
     >
       <Carousel
@@ -38,6 +39,6 @@ export const Carroussel: React.FC<Props> = (props) => {
         showNavigation={showArrows}
         animationConfig={config.gentle}
       />
-    </div>
+    </Box>
   );
 }

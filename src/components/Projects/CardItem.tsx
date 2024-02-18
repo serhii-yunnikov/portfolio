@@ -3,7 +3,6 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Link from '@mui/material/Link';
 import PlayLessonIcon from '@mui/icons-material/PlayLesson';
 import Tooltip from '@mui/material/Tooltip';
 import { Stack } from '@mui/material';
@@ -50,7 +49,7 @@ const CardItem: React.FC<Props> = ({
           </Avatar>
         }
         action={
-          <CardActions sx={{ padding: '0' }}>
+          <CardActions>
             <a
               href={gitHub}
             >
@@ -79,12 +78,11 @@ const CardItem: React.FC<Props> = ({
         subheader={description}
       />
       <ImageContainer>
-        <img src={picture} alt={title} className='card-image'/>
+        <img src={picture} alt={title}/>
       </ImageContainer>
       <CardContent>
         <Stack
           direction="row"
-          // divider={<Divider orientation="vertical" flexItem />}
           spacing={1}
           useFlexGap
           flexWrap="wrap"

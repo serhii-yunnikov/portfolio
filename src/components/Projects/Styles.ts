@@ -14,7 +14,7 @@ const CardContainer = styled(Box)({
 const ImageContainer = styled(Container)({
   width: '100%',
   height: '200px',
-  '& .card-image': {
+  '& img': {
     objectFit: 'contain',
     width: '100%',
     height: '100%'
@@ -34,10 +34,7 @@ const Header = styled(CardHeader)({
 
 const ModButton = styled(Button)({
   display: 'inline-flex',
-  // margin: '0',
   padding: '5px',
-  // outlineColor: 'rgb(199, 208, 221)',
-  // outlineStyle: 'none',
   textAlign: 'left',
   height: '24px',
   fontSize: '13px',
@@ -45,22 +42,16 @@ const ModButton = styled(Button)({
   gap: '3px',
   lineHeight: '19px',
   transition: '0.3s ease-out',
-  // backgroundColor: '#E6E6E6',
   opacity: '0.8',
   backdropFilter: 'blur(30px)',
   WebkitBackdropFilter: 'blur(30px)',
   borderRadius: '12px',
   '& .MuiButton-startIcon': {
     margin: '0',
-    '& .imageIcon': {
-      height: '16px',
-      width: '16px',
-      objectFit: 'contain'
-    }
+    height: '16px',
+    width: '16px',
+    objectFit: 'contain'
   },
-  // '&:hover': {
-  //   backgroundColor: '#E6E6E6',
-  // }
 });
 
 export {ModButton, CardContainer, ImageContainer, Header};

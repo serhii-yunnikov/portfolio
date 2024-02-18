@@ -11,7 +11,7 @@ const ExpertiseIconSmall: React.FC<Expertise> = ({ src, title }) => {
       variant="outlined"
       size="small"
       startIcon={
-        <img className="imageIcon" src={imageSrc} alt={title} />
+        <img src={imageSrc} alt={title} />
       }
       href="#file-upload"
     >

@@ -4,6 +4,7 @@ import CardItem from "./CardItem";
 import { projects } from "../../api/api";
 import { Carroussel } from "./Carroussel";
 import { Grid, Typography } from "@mui/material";
+import { BlockContainer } from "../About/Styles";
 
 
 const cards: CardType[] = projects.map(item => ({
@@ -13,7 +14,7 @@ const cards: CardType[] = projects.map(item => ({
 
 const Projects: React.FC = () => {
   return (
-    <section className="section" id="projects">
+    <BlockContainer id="projects">
       <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>
         Projects.
       </Typography>
@@ -27,7 +28,7 @@ const Projects: React.FC = () => {
           showArrows={false}
         />
       </Grid>
-    </section>
+    </BlockContainer>
   );
 };
 
