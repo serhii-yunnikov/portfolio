@@ -11,26 +11,3 @@ html, body {
   font-family: 'SF Pro';
   // color: '#1d1d1f';
 }
-
-// .section {
-//   height: 100vh;
-//   margin: 0 20px 0 20px;
-//   padding-top: 80px;
-//   transition: all 1;
-
-//   &__about {
-//     color: #1d1d1f;
-//   }
-// }
-
-.card {
-  width: 350px;
-  height: fit-content;
-  -webkit-backdrop-filter: blur(30px);
-  background-color: #E6E6E6;
-  border-radius: 10px;
-}
-
-.card-link:hover {
-  transition: scale 0.4s ease-out;
-}

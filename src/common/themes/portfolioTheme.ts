@@ -104,7 +104,7 @@ const createCommonTheme = (theme: Theme) => createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          color: theme.palette.primary.dark,
+          // color: theme.palette.primary.dark,
           opacity: 0.8
         }
       }
