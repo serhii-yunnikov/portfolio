@@ -22,17 +22,6 @@ const useStyles = makeStyles({
   },
 });
 
-// const textAnimation = {
-//   hidden: {
-//     x: 100,
-//     opacity: 0
-//   },
-//   visible: {
-//     x: 0,
-//     opacity: 1
-//   }
-// };
-
 const Greeting: React.FC = motion(() => {
   const scrollRef = useRef(null);
   const classes = useStyles();
@@ -42,7 +31,6 @@ const Greeting: React.FC = motion(() => {
       className={classes.root}
     >
       <Typography
-        // variant="h1"
         sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}
         className="greeting"
         component={motion.div}

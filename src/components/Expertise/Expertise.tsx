@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import { expertiseItems } from "../../api/api";
 import { ExpertiseCard } from "./ExpertiseCard";
 import { BlockContainer } from "../About/Styles";
@@ -10,6 +10,7 @@ const Expertise: React.FC = () => {
       <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>
         Expertise.
       </Typography>
+      <Divider orientation="horizontal" />
       <ExpertiseContainer>
         <ExpertiseCard technologies={expertiseItems} />
       </ExpertiseContainer>

@@ -3,7 +3,7 @@ import { CardType } from '../../types/CardType';
 import CardItem from "./CardItem";
 import { projects } from "../../api/api";
 import { Carroussel } from "./Carroussel";
-import { Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
 import { BlockContainer } from "../About/Styles";
 
 
@@ -18,6 +18,7 @@ const Projects: React.FC = () => {
       <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>
         Projects.
       </Typography>
+      <Divider orientation="horizontal" />
       <Grid container sx={{ width: '70%', margin: 'auto' }}>
         <Carroussel
           cards={cards}
