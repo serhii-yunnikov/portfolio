@@ -13,15 +13,17 @@ const Contacts: React.FC = () => {
         Contacts.
       </Typography>
       <Divider orientation="horizontal" />
-      <List sx={{ maxWidth: 320 }}>
-        {contacts.map((contact, index) => (
-          <ContacstItem
-            key={index}
-            icon={<contact.icon />}
-            label={contact.label}
-            href={contact.href}
-          />
-        ))}
+      <List>
+        {contacts.map((contact) => {
+          const {icon, label, href} = contact;
+          return (
+            <ContacstItem
+              key={label}
+              icon={React.createElement(icon)}
+              label={label}
+              href={href}
+            />
+        )})}
       </List>
     </BlockContainer>
   );

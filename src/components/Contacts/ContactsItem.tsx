@@ -1,6 +1,5 @@
-import React from 'react';
-import { ListItem, ListItemButton } from '@mui/material';
-import ListItemDecorator from '@mui/joy/ListItemDecorator';
+import { Divider, ListItemButton } from '@mui/material';
+import { ContactsItem, IconContainer, Label } from './Styles';
 
 interface Props {
   icon: React.ReactNode;
@@ -14,14 +13,15 @@ const ContacstItem: React.FC<Props> = ({
   href
 }) => {
   return (
-    <ListItem>
+    <ContactsItem>
       <ListItemButton selected href={href}>
-        <ListItemDecorator>
+        <IconContainer>
           {icon}
-        </ListItemDecorator>
-        {label}
+        </IconContainer>
+        <Divider orientation="vertical" flexItem />
+        <Label>{label}</Label>
       </ListItemButton>
-    </ListItem>
+    </ContactsItem>
   );
 };
 
