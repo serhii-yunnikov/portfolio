@@ -8,7 +8,7 @@ import ContacstItem from './ContactsItem';
 
 const Contacts: React.FC = () => {
   return (
-    <BlockContainer id="contacts">
+    <BlockContainer id="contacts" sx={{height: '400px'}}>
       <Typography sx={{ typography: { sm: 'h3', md: 'h2', lg: 'h1' } }}>
         Contacts.
       </Typography>

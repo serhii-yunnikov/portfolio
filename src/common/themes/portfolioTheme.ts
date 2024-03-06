@@ -2,12 +2,6 @@ import {createTheme} from '@mui/material/styles';
 import type {Theme} from '@mui/material/styles';
 import lightPalette from './lightPalette';
 
-// export const toolbarHeights = {
-//   mobilePortrait: 60,
-//   mobileLandscape: 60,
-//   tabletDesktop: 79,
-// };
-
 const createCommonTheme = (theme: Theme) => createTheme({
   ...theme,
   typography: {
@@ -22,21 +16,6 @@ const createCommonTheme = (theme: Theme) => createTheme({
       xl: 1920,
     },
   },
-// spacing: 8,
-  // mixins: {
-  //   toolbar: {
-  //     minHeight: toolbarHeights.mobilePortrait,
-  //     [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: {
-  //         minHeight: toolbarHeights.mobileLandscape,
-  //     },
-  //     [theme.breakpoints.up('sm')]: {
-  //         minHeight: toolbarHeights.mobileLandscape,
-  //     },
-  //     [theme.breakpoints.up('md')]: {
-  //         minHeight: toolbarHeights.tabletDesktop,
-  //     },
-  //   },
-  // },
   components: {
     MuiTypography: {
       styleOverrides: {
