@@ -268,29 +268,4 @@ export const projects: Project[] = [
       }
     ]
   },
-  {
-    title: 'Block Merge',
-    description: 'Javascript game',
-    picture: 'src/assets/images/puzzle_game.jpeg',
-    gitHub: 'https://github.com/serhii-yunnikov/2048-game',
-    demo: 'https://serhii-yunnikov.github.io/2048-game/',
-    technologies: [
-      {
-        src: 'html',
-        title: Technologies.html,
-      },
-      {
-        src: 'css',
-        title: Technologies.css,
-      },
-      {
-        src: 'sass',
-        title: Technologies.sass,
-      },
-      {
-        src: 'javascript',
-        title: Technologies.javascript,
-      }
-    ]
-  }
 ];
