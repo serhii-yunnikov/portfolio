@@ -77,16 +77,40 @@ export const expertiseItems: Expertise[] = [
   }
 ];
 
-// const phone_catalogue
-// = 'responsive web app, providing a \
-// seamless device shopping experience with features like a cart, \
-// task management, and an intuitive user interface across devices.';
-// const dia = 'dynamic landing page for business info and communication.';
-// const bike = 'Landing page. Bike shop for bicycles.';
-// const game = 'puzzle game, based on javascript where players \
-// strategically slide numbered tiles on a grid to combine them.';
-
 export const projects: Project[] = [
+  {
+    title: 'Project Future',
+    description: 'website',
+    picture: 'src/assets/images/project_future.jpg',
+    gitHub: '',
+    demo: 'https://projectfuture.life/en',
+    technologies: [
+      {
+        src: 'next',
+        title: Technologies.next,
+      },
+      {
+        src: 'material',
+        title: Technologies.material,
+      },
+      {
+        src: 'context',
+        title: Technologies.context,
+      },
+      {
+        src: 'react-router',
+        title: Technologies.router,
+      },
+      {
+        src: 'typescript',
+        title: Technologies.typescript,
+      },
+      {
+        src: 'api',
+        title: Technologies.restApi,
+      }
+    ]
+  },
   {
     title: 'The Ultimate Device Shop',
     description: 'React.js application',
@@ -125,7 +149,7 @@ export const projects: Project[] = [
       {
         src: 'html',
         title: Technologies.html,
-      },
+      }
     ]
   },
   {
@@ -162,7 +186,7 @@ export const projects: Project[] = [
       {
         src: 'html',
         title: Technologies.html,
-      },
+      }
     ]
   },
   {

@@ -19,5 +19,6 @@ export enum Technologies {
   figma = 'Figma',
   vsCode = 'VS Code',
   bulma = 'Bulma',
-  bootstrap = 'Bootstrap'
+  bootstrap = 'Bootstrap',
+  material='Material UI'
 }
