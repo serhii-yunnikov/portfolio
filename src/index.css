@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "SF Pro";
+  font-weight: normal;
+  src: url("fonts/FontsFree-Net-SFProDisplay-Regular.ttf") format("truetype"), url("fonts/SFProDisplay-Medium.ttf") format("truetype"), url("fonts/SFProDisplay-Bold.ttf") format("truetype");
+}
+html, body {
+  scroll-behavior: smooth;
+}
+
+#root {
+  position: relative;
+  background-color: #fbfbfd;
+  font-family: "SF Pro";
+}/*# sourceMappingURL=index.css.map */
