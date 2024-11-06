@@ -2,7 +2,7 @@ import {
   Typography,
   Button,
 } from '@mui/material';
-import avatar from '../../assets/images/ava.jpeg';
+import avatar from '/images/ava.jpeg';
 import { navLinks } from './constants';
 import { HeaderBar, Menu, MyAvatar } from './Styles';
 

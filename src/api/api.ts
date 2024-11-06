@@ -81,16 +81,16 @@ export const projects: Project[] = [
   {
     title: 'Project Future',
     description: 'website',
-    picture: 'src/assets/images/project_future.jpg',
+    picture: '/images/project_future.jpg',
     gitHub: '',
     demo: 'https://projectfuture.life/en',
     technologies: [
       {
-        src: 'next',
+        src: 'nextjs',
         title: Technologies.next,
       },
       {
-        src: 'material',
+        src: 'material-ui',
         title: Technologies.material,
       },
       {
@@ -114,7 +114,7 @@ export const projects: Project[] = [
   {
     title: 'The Ultimate Device Shop',
     description: 'React.js application',
-    picture: 'src/assets/images/phone_catalogue.jpeg',
+    picture: '/images/phone_catalogue.jpeg',
     gitHub: 'https://github.com/serhii-yunnikov/phone-catalog',
     demo: 'https://serhii-yunnikov.github.io/phone-catalog/',
     technologies: [
@@ -155,7 +155,7 @@ export const projects: Project[] = [
   {
     title: 'IP Address Tracker',
     description: 'React.js application',
-    picture: 'src/assets/images/ip_address.jpeg',
+    picture: '/images/ip_address.jpeg',
     gitHub: 'https://github.com/serhii-yunnikov/ip-address-tracker',
     demo: 'https://serhii-yunnikov.github.io/ip-address-tracker/',
     technologies: [
@@ -192,7 +192,7 @@ export const projects: Project[] = [
   {
     title: 'Interactive Business Hub',
     description: 'landing page',
-    picture: 'src/assets/images/dia_landing.jpeg',
+    picture: '/images/dia_landing.jpeg',
     gitHub: 'https://github.com/serhii-yunnikov/Dia-landing',
     demo: 'https://serhii-yunnikov.github.io/Dia-landing/',
     technologies: [
@@ -217,7 +217,7 @@ export const projects: Project[] = [
   {
     title: 'List of posts',
     description: 'React.js application',
-    picture: 'src/assets/images/list_of_posts.jpeg',
+    picture: '/images/list_of_posts.jpeg',
     gitHub: 'https://github.com/serhii-yunnikov/react_redux-list-of-posts/tree/develop',
     demo: 'https://serhii-yunnikov.github.io/react_redux-list-of-posts/',
     technologies: [
@@ -246,7 +246,7 @@ export const projects: Project[] = [
   {
     title: 'Cycle Haven',
     description: 'landing page',
-    picture: 'src/assets/images/bike_landing.jpeg',
+    picture: '/images/bike_landing.jpeg',
     gitHub: 'https://github.com/serhii-yunnikov/bike-landing',
     demo: 'https://serhii-yunnikov.github.io/bike-landing/',
     technologies: [
