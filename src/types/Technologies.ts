@@ -20,5 +20,5 @@ export enum Technologies {
   vsCode = 'VS Code',
   bulma = 'Bulma',
   bootstrap = 'Bootstrap',
-  material='Material UI'
+  material = mui,
 }
