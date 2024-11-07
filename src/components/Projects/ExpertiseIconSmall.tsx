@@ -4,7 +4,7 @@ import { ModButton } from "./Styles";
 
 
 const ExpertiseIconSmall: React.FC<Expertise> = ({ src, title }) => {
-  const imageSrc = `/icons/${src}.svg`;
+  const imageSrc = `${import.meta.env.BASE_URL}icons/${src}.svg`;
 
   return (
     <ModButton

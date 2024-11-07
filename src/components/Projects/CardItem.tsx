@@ -31,6 +31,7 @@ const CardItem: React.FC<Props> = ({
       ? "24px 28px 31px rgb(0 0 0 / 20%)"
       : "16px 16px 31px rgb(0 0 0 / 20%)"
   });
+  const imageSrc = `${import.meta.env.BASE_URL}${picture}`;
 
   return (
     <CardContainer
@@ -77,7 +78,7 @@ const CardItem: React.FC<Props> = ({
         subheader={description}
       />
       <ImageContainer>
-        <img src={picture} alt={title}/>
+        <img src={imageSrc} alt={title}/>
       </ImageContainer>
       <CardContent>
         <Stack

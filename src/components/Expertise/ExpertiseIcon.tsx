@@ -4,7 +4,7 @@ import { Expertise } from "../../types/Expertise";
 import { ModButton } from "./Styles";
 
 export const ExpertiseIcon: React.FC<Expertise> = ({ src, title }) => {
-  const imageSrc = `/icons/${src}.svg`;
+  const imageSrc = `${import.meta.env.BASE_URL}icons/${src}.svg`;
 
   return (
     <Tooltip
