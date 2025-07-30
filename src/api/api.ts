@@ -83,7 +83,7 @@ export const projects: Project[] = [
     description: 'website',
     picture: '/images/project_future.jpg',
     gitHub: '',
-    demo: 'https://projectfuture.life/en',
+    demo: 'https://internship-one-inky.vercel.app/en',
     technologies: [
       {
         src: 'nextjs',
