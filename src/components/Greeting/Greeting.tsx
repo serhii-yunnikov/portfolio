@@ -46,8 +46,6 @@ const Greeting: React.FC = motion(() => {
         variant="h1"
         className="greeting"
         component={motion.div}
-        // initial={{ opacity: 0 }}
-        // whileInView={{ opacity: 1 }}
         variants={{
           hidden: { y: 75 },
           visible: { y: 0 }

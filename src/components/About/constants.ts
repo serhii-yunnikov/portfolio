@@ -4,7 +4,7 @@ I specialize in React JS, React JS libraries, Next JS \
 Typescript, JavaScript, HTML, and CSS. \
 I'm well-versed in SASS, UI styling libraries \
 My educational background includes a degree from the Faculty of \
-Applied Mathematics, I have an Intermediate - B2 level in English. \
+Applied Mathematics, I have an Intermediate - B1 level in English. \
 Additionally, I'm actively learning German. \
 My journey into Web Development began 4 years ago when a colleague \
 inspired me to pursue this exciting career. \
